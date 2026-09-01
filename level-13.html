@@ -37,88 +37,85 @@
         .hexahue-container {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             flex-wrap: wrap;
-            max-width: 550px;
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        /* Official Hexahue 2x3 Grid Structure */
+        /* Standard 2x3 Hexahue Grid */
         .hex-symbol {
-            width: 28px;
-            height: 42px;
+            width: 32px;
+            height: 48px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            gap: 2px;
-            background-color: #000;
-            padding: 2px;
-            border: 1px solid #222;
+            border: 1px solid #1a1a1a;
         }
 
-        .k { background-color: #000000; } /* Black */
-        .w { background-color: #ffffff; } /* White */
-        .r { background-color: #ff0000; } /* Red */
-        .g { background-color: #00ff00; } /* Green */
-        .b { background-color: #0000ff; } /* Blue */
-        .c { background-color: #00ffff; } /* Cyan */
-        .m { background-color: #ff00ff; } /* Magenta */
-        .y { background-color: #ffff00; } /* Yellow */
+        /* dCode Color Palette */
+        .red { background-color: #ff0000; }
+        .lime { background-color: #00ff00; }
+        .blue { background-color: #0000ff; }
+        .yellow { background-color: #ffff00; }
+        .cyan { background-color: #00ffff; }
+        .magenta { background-color: #ff00ff; }
+        .pink { background-color: #ff66cc; }
     </style>
 </head>
 <body>
     <div class="box">
         <h1>level 13</h1>
-        <p class="clue">i love colors</p>
+        <p class="clue">read the spectrum. decipher the hexahue.</p>
         
         <div class="hexahue-container">
-            <!-- A: Red (Top 4 Red, Bottom 2 Black) -->
+            <!-- A -->
             <div class="hex-symbol">
-                <div class="r"></div><div class="r"></div>
-                <div class="r"></div><div class="r"></div>
-                <div class="k"></div><div class="k"></div>
+                <div class="pink"></div><div class="red"></div>
+                <div class="lime"></div><div class="yellow"></div>
+                <div class="blue"></div><div class="cyan"></div>
             </div>
-            <!-- R: Red (Top-left Red, rest Black/White) -->
+            <!-- R -->
             <div class="hex-symbol">
-                <div class="r"></div><div class="k"></div>
-                <div class="w"></div><div class="w"></div>
-                <div class="k"></div><div class="r"></div>
+                <div class="blue"></div><div class="yellow"></div>
+                <div class="cyan"></div><div class="magenta"></div>
+                <div class="red"></div><div class="lime"></div>
             </div>
-            <!-- G: Green (Top 4 Green, Bottom 2 Black) -->
+            <!-- G -->
             <div class="hex-symbol">
-                <div class="g"></div><div class="g"></div>
-                <div class="g"></div><div class="g"></div>
-                <div class="k"></div><div class="k"></div>
+                <div class="lime"></div><div class="blue"></div>
+                <div class="cyan"></div><div class="magenta"></div>
+                <div class="yellow"></div><div class="red"></div>
             </div>
-            <!-- U: Yellow (Top-left Yellow, rest pattern) -->
+            <!-- U -->
             <div class="hex-symbol">
-                <div class="y"></div><div class="k"></div>
-                <div class="w"></div><div class="w"></div>
-                <div class="k"></div><div class="y"></div>
+                <div class="blue"></div><div class="cyan"></div>
+                <div class="red"></div><div class="lime"></div>
+                <div class="yellow"></div><div class="lime"></div>
             </div>
-            <!-- M: Magenta (Top-left Magenta) -->
+            <!-- M -->
             <div class="hex-symbol">
-                <div class="m"></div><div class="k"></div>
-                <div class="w"></div><div class="w"></div>
-                <div class="k"></div><div class="m"></div>
+                <div class="yellow"></div><div class="blue"></div>
+                <div class="cyan"></div><div class="red"></div>
+                <div class="magenta"></div><div class="red"></div>
             </div>
-            <!-- E: Cyan (Top 4 Cyan, Bottom 2 Black) -->
+            <!-- E -->
             <div class="hex-symbol">
-                <div class="c"></div><div class="c"></div>
-                <div class="c"></div><div class="c"></div>
-                <div class="k"></div><div class="k"></div>
+                <div class="red"></div><div class="lime"></div>
+                <div class="yellow"></div><div class="blue"></div>
+                <div class="magenta"></div><div class="cyan"></div>
             </div>
-            <!-- N: Cyan (Top-left Cyan) -->
+            <!-- N -->
             <div class="hex-symbol">
-                <div class="c"></div><div class="k"></div>
-                <div class="w"></div><div class="w"></div>
-                <div class="k"></div><div class="c"></div>
+                <div class="yellow"></div><div class="blue"></div>
+                <div class="cyan"></div><div class="lime"></div>
+                <div class="magenta"></div><div class="red"></div>
             </div>
-            <!-- T: Red (Top-left & Top-right Red) -->
+            <!-- T -->
             <div class="hex-symbol">
-                <div class="r"></div><div class="r"></div>
-                <div class="w"></div><div class="w"></div>
-                <div class="k"></div><div class="k"></div>
+                <div class="magenta"></div><div class="red"></div>
+                <div class="yellow"></div><div class="cyan"></div>
+                <div class="red"></div><div class="lime"></div>
             </div>
         </div>
     </div>
