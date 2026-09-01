@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>revert color</title>
+    <style>
+        body {
+            background-color: #080808;
+            color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        p {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <p>revert color</p>
+</body>
+</html>
