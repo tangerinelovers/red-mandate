@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>level 13</title>
+    <style>
+        body { 
+            background-color: #080808; 
+            color: #d0d0d0; 
+            font-family: 'Courier New', Courier, monospace; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box {
+            border: 1px solid #222;
+            padding: 50px 60px;
+            text-align: center;
+            background-color: #0c0c0c;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        p.clue {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 35px;
+            font-size: 0.95rem;
+        }
+        
+        /* Hexahue Symbol Grid */
+        .hexahue-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* 3x3 Pixel representation of Hexahue symbols */
+        .hex-symbol {
+            width: 36px;
+            height: 36px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2px;
+            background-color: #111;
+            padding: 3px;
+            border: 1px solid #222;
+        }
+
+        .pixel {
+            background-color: #181818;
+        }
+
+        /* Color classes for Hexahue pattern mapping */
+        .c-red { background-color: #e74c3c; }
+        .c-green { background-color: #2ecc71; }
+        .c-blue { background-color: #3498db; }
+        .c-yellow { background-color: #f1c40f; }
+        .c-purple { background-color: #9b59b6; }
+        .c-cyan { background-color: #1abc9c; }
+        .c-white { background-color: #ecf0f1; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>level 13</h1>
+        <p class="clue">read the spectrum. decipher the hexahue.</p>
+        
+        <!-- Hexahue visual patterns representing: A - R - G - U - M - E - N - T -->
+        <div class="hexahue-container">
+            <!-- A -->
+            <div class="hex-symbol" title="Symbol 1">
+                <div class="pixel c-red"></div><div class="pixel c-red"></div><div class="pixel c-red"></div>
+                <div class="pixel"></div><div class="pixel c-red"></div><div class="pixel"></div>
+                <div class="pixel c-red"></div><div class="pixel c-red"></div><div class="pixel c-red"></div>
+            </div>
+            <!-- R -->
+            <div class="hex-symbol" title="Symbol 2">
+                <div class="pixel c-blue"></div><div class="pixel c-blue"></div><div class="pixel"></div>
+                <div class="pixel c-blue"></div><div class="pixel c-blue"></div><div class="pixel"></div>
+                <div class="pixel c-blue"></div><div class="pixel"></div><div class="pixel c-blue"></div>
+            </div>
+            <!-- G -->
+            <div class="hex-symbol" title="Symbol 3">
+                <div class="pixel c-green"></div><div class="pixel c-green"></div><div class="pixel c-green"></div>
+                <div class="pixel c-green"></div><div class="pixel"></div><div class="pixel"></div>
+                <div class="pixel c-green"></div><div class="pixel c-green"></div><div class="pixel c-green"></div>
+            </div>
+            <!-- U -->
+            <div class="hex-symbol" title="Symbol 4">
+                <div class="pixel c-yellow"></div><div class="pixel"></div><div class="pixel c-yellow"></div>
+                <div class="pixel c-yellow"></div><div class="pixel"></div><div class="pixel c-yellow"></div>
+                <div class="pixel c-yellow"></div><div class="pixel c-yellow"></div><div class="pixel c-yellow"></div>
+            </div>
+            <!-- M -->
+            <div class="hex-symbol" title="Symbol 5">
+                <div class="pixel c-purple"></div><div class="pixel"></div><div class="pixel c-purple"></div>
+                <div class="pixel c-purple"></div><div class="pixel c-purple"></div><div class="pixel c-purple"></div>
+                <div class="pixel c-purple"></div><div class="pixel"></div><div class="pixel c-purple"></div>
+            </div>
+            <!-- E -->
+            <div class="hex-symbol" title="Symbol 6">
+                <div class="pixel c-cyan"></div><div class="pixel c-cyan"></div><div class="pixel c-cyan"></div>
+                <div class="pixel c-cyan"></div><div class="pixel c-cyan"></div><div class="pixel"></div>
+                <div class="pixel c-cyan"></div><div class="pixel c-cyan"></div><div class="pixel c-cyan"></div>
+            </div>
+            <!-- N -->
+            <div class="hex-symbol" title="Symbol 7">
+                <div class="pixel c-white"></div><div class="pixel"></div><div class="pixel c-white"></div>
+                <div class="pixel c-white"></div><div class="pixel c-white"></div><div class="pixel c-white"></div>
+                <div class="pixel c-white"></div><div class="pixel"></div><div class="pixel c-white"></div>
+            </div>
+            <!-- T -->
+            <div class="hex-symbol" title="Symbol 8">
+                <div class="pixel c-red"></div><div class="pixel c-red"></div><div class="pixel c-red"></div>
+                <div class="pixel"></div><div class="pixel c-red"></div><div class="pixel"></div>
+                <div class="pixel"></div><div class="pixel c-red"></div><div class="pixel"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+      CIPHER DECODER:
+      Pattern 1 (Red)    -> A
+      Pattern 2 (Blue)   -> R
+      Pattern 3 (Green)  -> G
+      Pattern 4 (Yellow) -> U
+      Pattern 5 (Purple) -> M
+      Pattern 6 (Cyan)   -> E
+      Pattern 7 (White)  -> N
+      Pattern 8 (Red-T)  -> T
+
+      Resulting Solution: argument.html
+    -->
+</body>
+</html>
